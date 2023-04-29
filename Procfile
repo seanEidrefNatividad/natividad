@@ -1,1 +1,1 @@
-web: heroku-php-apache2 web/album/view/
+web: heroku-php-apache2 web/
