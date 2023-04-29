@@ -105,7 +105,7 @@ require_once 'template/image_show.php';
         </div>
         <div id="sidebarNav">
             <ul>
-                <li><button class="navBtn"><a href="index.php"><i class="fa-solid fa-house"></i>&nbsp;Home</a></button></li>
+                <li><a href="index.php"><button class="navBtn"><i class="fa-solid fa-house"></i>&nbsp;Home</button></a></li>
                 <li><button class="navBtn1"><i class="fa-solid fa-images"></i>&nbsp;Albums</button></li>
                 <ul>
                     <?php 
@@ -126,13 +126,13 @@ require_once 'template/image_show.php';
         <hr>
             <?php           
                 echo '
-                    <button class="navBtn">
-                        <a href="../controller/logout.php" type="button">
-                            <i class="fa-solid fa-right-from-bracket"></i>
-                            &nbsp;
-                            Logout
-                        </a>
-                    </button>
+                    <a href="../controller/logout.php" type="button">
+                        <button class="navBtn" style="width: 200px;">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                &nbsp;
+                                Logout                       
+                        </button>
+                    </a>
                 ';          
             ?>
     </div>
@@ -146,13 +146,15 @@ require_once 'template/image_show.php';
         </div>
         <?php           
             echo '
-                <button class="navBtn4">
-                    <a href="../controller/logout.php" type="button">
+            <div class="position-absolute" style="right: 1rem;">
+                <a href="../controller/logout.php" type="button">
+                    <button class="navBtn px-3">
                         <i class="fa-solid fa-right-from-bracket"></i>
                         &nbsp;
                         Logout
-                    </a>
-                </button>
+                    </button>
+                </a>
+            </div>
             ';          
         ?>
     </div>
